@@ -1,0 +1,141 @@
+header {
+  height: 75px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+footer {
+  background-color: #222;
+  border-top: 5px solid #8c2ec8;
+  color: #eee;
+  text-align: center;
+}
+
+nav {
+  width: calc(100% - 200px);  
+}
+
+
+/** general layout rules **/
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+
+/** general ui rules **/
+.btn {
+  display: inline-block;
+  background-color: transparent;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+.btn-default {
+  color: #2EC866;
+  border-color: #2EC866;
+  background-color: #fff;
+}
+
+.btn-default:hover {
+  color: #fff;
+  background-color: #2EC866;
+}
+
+.btn-action {
+  color: #8c2ec8;
+  border-color: #8c2ec8;
+  border-width:3px;
+  background-color: #fff;
+}
+
+.btn-action:hover {
+  color: #fff;
+  background-color: #8c2ec8;
+}
+
+
+/** header section **/
+.logo {
+  display: inline-block;
+}
+
+.links {
+  width: calc(100% - 200px);
+  text-align: center;
+}
+
+.links a {
+  display: inline-block;
+  line-height: 35px;
+  padding: 20px 30px 20px 30px;
+  color: #888;
+  font-size: 110%;
+}
+
+.links a:hover {
+  color: #2EC866;
+}
+
+.auth {
+  margin: 15px 20px 0 0;
+  width: 180px;
+}
+
+
+/** content section **/
+.panel {
+  height: 100vh;
+  background-position: top;
+  background-size: cover;
+  text-align: center;
+  color: #eee;
+  width: 100%;
+}
+
+.panel h2 {
+  padding-top: 25vh;
+}
+
+.attention {
+    background-image: url(../images/zen-bg.jpg);
+}
+
+.brands {
+    background-image: url(../images/meditation-bg.jpg);
+}
+
+.action { /* button */
+  margin: 30px 0;
+}
+
+.brand-logos {
+  margin: 15vh auto;
+  width: 75%;
+}
+
+.brand-logos img {
+  display: block;
+}
+
+
+/** footer section **/
+footer h3 {
+  line-height: 30px;
+  padding: 80px 0 80px 0;
+  font-family: 'Pacifico', cursive;
+  color: #cb79ff;
+  font-size: 200%
+}
