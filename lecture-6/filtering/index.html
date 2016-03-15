@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+  <input type="checkbox" id="filter-all" data-all-filters="all" />
+  <label for="filter-all" class="all">All types</label>
+  
+  <input type="checkbox" id="filter-ale" data-filter="ale" />
+  <label for="filter-ale" class="ale">Ale</label>
+  
+  <input type="checkbox" id="filter-lager" data-filter="lager" />
+  <label for="filter-lager" class="lager">Lager</label>
+  
+  <input type="checkbox" id="filter-spontaneous" data-filter="spontaneous" />
+  <label for="filter-spontaneous" class="spontaneous">Spontaneous</label>
+
+  <div class="container">
+
+      <div class="product" data-item="ale">Stout</div>
+      <div class="product" data-item="ale">Porter</div>
+      <div class="product" data-item="ale">Dubbel</div>
+      <div class="product" data-item="ale">Saison</div>
+      <div class="product" data-item="lager">Pilsner</div>
+      <div class="product" data-item="lager">Schwartzbier</div>
+      <div class="product" data-item="spontaneous">Lambic</div>
+      <div class="product" data-item="spontaneous">Gueze</div>
+      
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

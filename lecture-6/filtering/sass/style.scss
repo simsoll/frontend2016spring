@@ -1,0 +1,89 @@
+@import "_reset.scss";
+
+$lager: green;
+$all: red;
+$ale: blue;
+$spontaneous: orange;
+$labelText: white;
+
+$toggleChange: 10%;
+
+@mixin inputToggle($color){
+  background-color: lighten($color, 20%); 
+}
+
+body {
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.product {
+  flex: 0 25%;
+  text-align: center;
+  box-sizing: border-box;
+  border: 10px solid white;
+  min-height: 25vh;
+  line-height: 25vh;
+  display: none;
+  width: 25%;
+  background-color: #fff;
+  color: white;
+}
+
+.selected {
+  display: block;
+}
+
+label {
+   padding: 30px;
+  line-height: 40px;
+  font-weight: bold;
+  color: $labelText;
+}
+
+input {
+ // visibility: hidden;
+}
+
+// labels
+
+.all {
+  background-color: $all;
+}
+
+.ale, [data-item="ale"] {
+  background-color: $ale;
+}
+
+.lager, [data-item="lager"] {
+  background-color: $lager;
+}
+
+.spontaneous, [data-item="spontaneous"] {
+  background-color: $spontaneous;
+}
+
+// toggle backgroundcolors
+input:checked + .ale {
+   @include inputToggle($ale);
+}
+
+input:checked + .lager {
+   @include inputToggle($lager);
+}
+
+input:checked + .spontaneous {
+   @include inputToggle($spontaneous);
+}
+
+input:checked + .all {
+   @include inputToggle($all);
+}
+
+
+
