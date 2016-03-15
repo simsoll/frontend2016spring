@@ -1,0 +1,502 @@
+/*********************** EXTRA SMALL ( 0 - 480px) ******************/
+
+
+/** GENERAL ELEMENTS **/
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: #eaeaea;
+  background-color: #54504d;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 300%;
+  padding-top: 30px;
+  margin: 0 0 15px 0;
+}
+
+h2 {
+  font-size: 150%;
+}
+
+h3 {
+  font-size: 120%;
+  margin: 0 0 10px 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+aside {
+  background: #000;
+  margin-top: 100px;
+  width: 100%;
+  height: calc(100% - 100px);
+}
+
+main {
+  width: 100%;
+}
+
+/** GENERAL UI ELEMENTS **/
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #54504d;
+    height: 100%;
+    overflow: auto;
+  }
+
+.btn {
+  display: inline-block;
+  background-color: transparent;
+  padding: 15px;
+  border: 1px solid;
+  cursor: pointer;
+  box-sizing: border-box;
+  line-height: 100%;
+}
+
+.btn-default {
+  color: #eaeaea;
+  border-color: #eaeaea;
+  background-color: transparent;
+}
+
+.btn-default:hover {
+  color: #fff;
+  background-color: #c5554d;
+}
+
+.btn-category {
+  width: 100%;
+  background-color: #eaeaea;
+  border: none;
+  color: #54504d;
+  box-sizing: border-box;
+  font-weight: 700;
+}
+
+.btn-category-child {
+  width: 100%;
+  background-color: #d3d3d3;
+  border: none;
+  color: #54504d;
+  font-weight: 700;
+}
+
+.btn.toggled {
+  background-color: #c5554d;
+}
+
+.pull-left {
+  float: left;
+  display: inline-block;
+}
+
+.pull-right {
+  display: inline-block;
+  float: right;
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden-xs, .hidden-sm, .hidden-md, .hidden-lg {
+  display: none;
+}
+
+.visible-sm-block, .visible-sm-inline-block, .visible-sm-inline,
+.visible-md-block, .visible-md-inline-block, .visible-md-inline,
+.visible-lg-block, .visible-lg-inline-block, .visible-lg-inline  {
+  display: none;
+}
+
+.visible-xs-block {
+  display: block;
+}
+
+.visible-xs-inline-block {
+  display: inline-block;
+}
+
+.visible-xs-inline {
+  display: inline;
+}
+
+/** FONT AWESOME OVERWRITES **/
+
+.fa.pull-left, .fa.pull-right {
+  margin: 0;
+}
+
+
+/** HEADER **/
+
+header {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  background-color: #54504d;
+  background-image: url('http://dummyimage.com/75x100/c5554d/ffffff&text=LOGO');
+  background-position: left top;
+  background-repeat: no-repeat;
+  border-bottom: 2px solid #eaeaea;
+
+  z-index: 100;
+}
+
+nav, nav ul {
+  line-height: 100px;
+  height: 100px;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px 0 ;
+  height: 100px;
+}
+
+nav .btn {
+  font-size: 120%;
+}
+
+nav i {
+  vertical-align: middle;
+}
+
+/** ASIDE - CATEGORIES MENU **/
+
+
+aside h2 {
+  margin: 20px 0 10px 0;
+  font-size: 200%;
+}
+
+aside .fa {
+  font-size: inherit;
+}
+
+aside .btn {
+  font-size: 175%;
+}
+
+.category { /* ul */
+  margin-top: 15px;
+}
+
+.category:first-child {
+  margin-top: 0;
+}
+
+.category-parent { /* li */
+  margin-bottom: 2px;
+}
+
+.category-child { /* ul */
+}
+
+.category-child li {
+  margin-bottom: 2px;
+}
+
+.selected {
+  background-color: #999;
+}
+
+
+/** MAIN **/
+
+.products { /* section */
+  margin: 100px 0;
+}
+
+.product {
+  width: 100%;
+  margin: 1vh 0;
+  background-color: black;
+  height: 300px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+
+.product p {
+  position: absolute;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  background-color: #FFF;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #222;
+}
+
+/*********************** EXTRA SMALL (481-767px) **************/ 
+
+@media screen and (min-width: 481px) {
+  
+  header {
+    background-image: url('http://dummyimage.com/200x100/c5554d/ffffff&text=LOGO');
+  }
+  
+  .product {
+    height: 200px; 
+    width: 49.5%;
+    margin: 0 1% 1vh 0;
+  }
+
+  .product:nth-child(even) {
+    margin-right: 0;
+  }
+  
+
+} /* EXTRA SMALL 481-767 END */
+
+/*********************** SMALL (768 - 991px) ******************/
+
+@media screen and (min-width: 768px) {
+  
+  .visible-xs-block, .visible-xs-inline-block, .visible-xs-inline,
+  .visible-md-block, .visible-md-inline-block, .visible-md-inline,
+  .visible-lg-block, .visible-lg-inline-block, .visible-lg-inline  {
+    display: none;
+  }
+  
+  .visible-sm-block {
+    display: block;
+  }
+
+  .visible-sm-inline-block {
+    display: inline-block;
+  }
+
+  .visible-sm-inline {
+    display: inline;
+  }
+
+  header {
+    background-image: url('http://dummyimage.com/300x100/c5554d/ffffff&text=LOGO');
+  }
+
+  
+} /* SMALL END */
+
+
+/*********************** MEDIUM (992 - 1199px) ******************/
+
+@media screen and (min-width: 992px) {
+
+  
+  .visible-xs-block, .visible-xs-inline-block, .visible-xs-inline,
+  .visible-sm-block, .visible-sm-inline-block, .visible-sm-inline,
+  .visible-lg-block, .visible-lg-inline-block, .visible-lg-inline  {
+    display: none;
+  }  
+  
+  .visible-md-block {
+    display: block;
+  }
+
+  .visible-md-inline-block {
+    display: inline-block;
+  }
+
+  .visible-md-inline {
+    display: inline;
+  }
+
+  h1 {
+    color: #eaeaea;
+  }
+  
+  h2 {
+    margin: 20px 0 10px 0;
+    color: #eaeaea;
+  }
+  
+  aside {
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    background-color: #c5554d;
+    padding-top: 100px;
+  }
+
+  main {
+    width: calc(100% - 300px);
+    height: 100%;
+    overflow: auto;
+    padding-top: 100px;
+  }
+  
+  
+  /****** HEADER ********/
+  
+  header ul {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  header ul li {
+    margin: 0 1px 0 1px;
+    width: 123px;
+  }
+
+  header ul li a {
+    display: block;
+    background-color: #625d5a;
+    padding: 0 20px 0 20px;
+    color: #fff;
+    height: 100px;
+    box-sizing: border-box;
+  }
+
+  header ul li a:hover {
+    background-color: #c5554d;
+  }
+
+  .active {
+    border-bottom: 10px solid #c5554d;
+  }
+
+  .authentication {
+    height: 100%;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 100px;
+    text-align: center;
+  }
+
+  .authentication .btn {
+    margin: 0 5px 0 5px;
+    font-size: inherit;
+  }
+  
+  /******* ASIDE ********/
+  
+  aside .btn {
+    font-size: 100%;
+  }
+  
+  
+  /******** MAIN ********/  
+  
+  .products { /* section */
+    margin: 0 2% 0 2%;
+  }
+  
+  .product:nth-child(even) { /* reset from medium */
+    margin-right: 1.5%;
+  }
+
+  .product:nth-child(3n-1) {
+    margin-right: 0;
+  }
+
+  .product {
+    margin-right: 1.5%;
+    height: 236px; 
+    width: calc(97% / 3);
+  }
+    
+} /* MEDIUM END */
+
+
+/*********************** LARGE (> 1200px) ******************/
+
+@media screen and (min-width: 1200px) {
+  
+  
+  /******* GENERAL ELEMENTS ********/
+  
+  body {
+    background-color: #eaeaea;
+  }
+  
+  
+  /********* VISIBILITY HANDLING *********/
+  
+  .visible-xs-block, .visible-xs-inline-block, .visible-xs-inline,
+  .visible-sm-block, .visible-sm-inline-block, .visible-sm-inline,
+  .visible-md-block, .visible-md-inline-block, .visible-md-inline  {
+    display: none;
+  }  
+  
+  .visible-lg-block {
+    display: block;
+  }
+
+  .visible-lg-inline-block {
+    display: inline-block;
+  }
+
+  .visible-lg-inline {
+    display: inline;
+  }
+
+  /******** GENERAL UI ELEMENTS **********/
+  
+  .container {
+    width: 1200px;
+    border-left: 1px solid #ccc;
+  }
+  
+  /******** HEADER *************/
+  
+  header {
+    width: inherit;
+  }
+  
+  header ul {
+    float: left;
+    width: 600px;
+    margin-left: 300px;
+  }
+  
+  .authentication {
+    position: static;
+    float: left;
+    width: 300px;
+  }
+  
+  /******** MAIN *********/
+  
+  
+  .product:nth-child(even) { /* reset from small */
+    margin-right: 2%;
+  }
+
+  .product:nth-child(3n-1) { /* reset from medium */
+    margin-right: 2%;
+  }
+
+  .product:nth-child(4n+2) {
+    margin-right: 0;
+  } 
+  .product {
+    margin: 0 2% 1.5vh 0;
+    height: 236px; 
+    width: calc(94% / 4);
+  }
+  
+  
+    
+  
+} /* LARGE END */
+

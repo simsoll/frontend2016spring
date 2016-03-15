@@ -1,0 +1,21 @@
+{
+  "name": "products",
+  "homepage": "https://github.com/eaaa/frontend2016spring",
+  "authors": [
+    "Niels Henrik Juul Hansen <niha@eaaa.dk>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "fontawesome#^4.5.0"
+  }
+}

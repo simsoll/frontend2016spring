@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Products</title>
+	<link rel="stylesheet" href="css/reset.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <header>
+    
+      <nav class="hidden-xs hidden-sm visible-md-block visible-lg-block">
+        <ul>
+          <li>
+            <a href="index.html">HOME</a>
+          </li>
+          <li>
+            <a href="products.html" class="active">PRODUCTS</a>
+          </li>
+          <li>
+            <a href="blog.html">BLOG</a>
+          </li>
+        </ul>
+        
+        
+        <div class="authentication">
+          <button class="btn btn-default">LOGIN</button>
+          <button class="btn btn-default">REGISTER</button>
+        </div>
+      </nav>
+      <nav class="visible-xs-block visible-sm-block hidden-md hidden-lg pull-right">
+         <ul>
+           <li><button class="btn btn-default aside-toggle">CATEGORIES</button></li>
+           <li><a href="#" class="navbar-toggle"><i class="fa fa-3x fa-bars"></i></a></li>
+         </ul>
+      </nav>
+    </header>
+    
+    <aside class="pull-left hidden-xs hidden-sm visible-md-block visible-lg-block">
+      <h2>CATEGORIES</h2>
+      <ul>
+          <li class="category">
+            <a href="category/tea" class="btn btn-category category-parent">TEA 
+              <i class="fa fa-plus-square-o fa-2x pull-right"></i>
+            </a>
+            <ul class="category-child hidden">
+              <li>
+                <a href="/category/tea/green" class="btn btn-category-child">GREEN</a>
+              </li>
+              <li>
+                <a href="/category/tea/matcha" class="btn btn-category-child">MATCHA</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="category">
+            <a href="category/beer" class="btn btn-category category-parent">BEER <i class="fa fa-lg fa-plus-square-o pull-right"></i></a>
+            <ul class="category-child hidden">
+              <li>
+                <a href="/category/beer/ale" class="btn btn-category-child">ALE</a>
+              </li>
+              <li>
+                <a href="/category/beer/lager" class="btn btn-category-child">LAGER</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="category">
+            <a href="category/beer" class="btn btn-category category-parent">
+              PORT 
+              <i class="fa fa-lg fa-minus-square-o pull-right"></i>
+            </a>
+            <ul class="category-child">
+              <li>
+                <a href="/category/port/colheita" class="btn btn-category-child">TAWNY</a>
+              </li>
+              <li>
+                <a href="/category/port/colheita" class="btn btn-category-child">COLHEITA</a>
+              </li>
+              <li>
+                <a href="/category/port/lbw" class="btn btn-category-child">LATE BOTTLED VINTAGE</a>
+              </li>
+              <li>
+                <a href="/category/port/vintage" class="btn btn-category-child selected">
+                  VINTAGE
+                  <i class="fa fa-lg fa-chevron-right pull-right hidden-xs hidden-sm visible-md-block visible-lg-block"></i>
+                </a>
+
+              </li>
+            </ul>
+          </li>
+      </ul>
+    </aside>
+
+    <main class="pull-left">
+
+      <section class="products">
+
+        <h1>PRODUCTS</h1>
+        <h3>VINTAGE</h3>
+           <div class="product">
+             <picture>
+               <source
+                 srcset="http://dummyimage.com/300x350/c5554d/ffffff&text=LG_1200"
+                 media="(min-width:1200px)">
+               <source
+                 srcset="http://dummyimage.com/400x450/c5554d/ffffff&text=MD_992-1199"
+                 media="(min-width:992px)">
+               <source
+                 srcset="http://dummyimage.com/500x250/c5554d/ffffff&text=SM_768-991"
+                 media="(min-width:768px)">
+               <source
+                 srcset="http://dummyimage.com/500x350/c5554d/ffffff&text=XS_481-767"
+                 media="(min-width:481px)">
+               <source
+                 srcset="http://dummyimage.com/480x300/c5554d/ffffff&text=XS_0-480"
+                 media="(min-width:0px)">
+                <img src="http://dummyimage.com/400x400/000000/fffffff&text=ALL" alt="product image">
+             </picture>
+             
+             
+             <p>PRODUCT TEXT</p>
+           </div>
+
+            <div class="product">
+             <picture>
+               <source
+                 srcset="http://dummyimage.com/300x350/c5554d/ffffff&text=LG_1200"
+                 media="(min-width:1200px)">
+               <source
+                 srcset="http://dummyimage.com/400x450/c5554d/ffffff&text=MD_992-1199"
+                 media="(min-width:992px)">
+               <source
+                 srcset="http://dummyimage.com/500x250/c5554d/ffffff&text=SM_768-991"
+                 media="(min-width:768px)">
+               <source
+                 srcset="http://dummyimage.com/500x350/c5554d/ffffff&text=XS_481-767"
+                 media="(min-width:481px)">
+               <source
+                 srcset="http://dummyimage.com/480x300/c5554d/ffffff&text=XS_0-480"
+                 media="(min-width:0px)">
+                <img src="http://dummyimage.com/400x400/000000/fffffff&text=ALL" alt="product image">
+             </picture>
+             
+             
+             <p>PRODUCT TEXT</p>
+           </div>
+           
+           <div class="product">
+             <picture>
+               <source
+                 srcset="http://dummyimage.com/300x350/c5554d/ffffff&text=LG_1200"
+                 media="(min-width:1200px)">
+               <source
+                 srcset="http://dummyimage.com/400x450/c5554d/ffffff&text=MD_992-1199"
+                 media="(min-width:992px)">
+               <source
+                 srcset="http://dummyimage.com/500x250/c5554d/ffffff&text=SM_768-991"
+                 media="(min-width:768px)">
+               <source
+                 srcset="http://dummyimage.com/500x350/c5554d/ffffff&text=XS_481-767"
+                 media="(min-width:481px)">
+               <source
+                 srcset="http://dummyimage.com/480x300/c5554d/ffffff&text=XS_0-480"
+                 media="(min-width:0px)">
+                <img src="http://dummyimage.com/400x400/000000/fffffff&text=ALL" alt="product image">
+             </picture>
+             
+             
+             <p>PRODUCT TEXT</p>
+           </div>
+           
+           <div class="product">
+             <picture>
+               <source
+                 srcset="http://dummyimage.com/300x350/c5554d/ffffff&text=LG_1200"
+                 media="(min-width:1200px)">
+               <source
+                 srcset="http://dummyimage.com/400x450/c5554d/ffffff&text=MD_992-1199"
+                 media="(min-width:992px)">
+               <source
+                 srcset="http://dummyimage.com/500x250/c5554d/ffffff&text=SM_768-991"
+                 media="(min-width:768px)">
+               <source
+                 srcset="http://dummyimage.com/500x350/c5554d/ffffff&text=XS_481-767"
+                 media="(min-width:481px)">
+               <source
+                 srcset="http://dummyimage.com/480x300/c5554d/ffffff&text=XS_0-480"
+                 media="(min-width:0px)">
+                <img src="http://dummyimage.com/400x400/000000/fffffff&text=ALL" alt="product image">
+             </picture>
+             
+             
+             <p>PRODUCT TEXT</p>
+           </div>
+           
+           <div class="product">
+             <picture>
+               <source
+                 srcset="http://dummyimage.com/300x350/c5554d/ffffff&text=LG_1200"
+                 media="(min-width:1200px)">
+               <source
+                 srcset="http://dummyimage.com/400x450/c5554d/ffffff&text=MD_992-1199"
+                 media="(min-width:992px)">
+               <source
+                 srcset="http://dummyimage.com/500x250/c5554d/ffffff&text=SM_768-991"
+                 media="(min-width:768px)">
+               <source
+                 srcset="http://dummyimage.com/500x350/c5554d/ffffff&text=XS_481-767"
+                 media="(min-width:481px)">
+               <source
+                 srcset="http://dummyimage.com/480x300/c5554d/ffffff&text=XS_0-480"
+                 media="(min-width:0px)">
+                <img src="http://dummyimage.com/400x400/000000/fffffff&text=ALL" alt="product image">
+             </picture>
+             
+             
+             <p>PRODUCT TEXT</p>
+           </div>
+           
+           <div class="product">
+             <picture>
+               <source
+                 srcset="http://dummyimage.com/300x350/c5554d/ffffff&text=LG_1200"
+                 media="(min-width:1200px)">
+               <source
+                 srcset="http://dummyimage.com/400x450/c5554d/ffffff&text=MD_992-1199"
+                 media="(min-width:992px)">
+               <source
+                 srcset="http://dummyimage.com/500x250/c5554d/ffffff&text=SM_768-991"
+                 media="(min-width:768px)">
+               <source
+                 srcset="http://dummyimage.com/500x350/c5554d/ffffff&text=XS_481-767"
+                 media="(min-width:481px)">
+               <source
+                 srcset="http://dummyimage.com/480x300/c5554d/ffffff&text=XS_0-480"
+                 media="(min-width:0px)">
+                <img src="http://dummyimage.com/400x400/000000/fffffff&text=ALL" alt="product image">
+             </picture>
+             
+             
+             <p>PRODUCT TEXT</p>
+           </div>
+           
+           <div class="product">
+             <picture>
+               <source
+                 srcset="http://dummyimage.com/300x350/c5554d/ffffff&text=LG_1200"
+                 media="(min-width:1200px)">
+               <source
+                 srcset="http://dummyimage.com/400x450/c5554d/ffffff&text=MD_992-1199"
+                 media="(min-width:992px)">
+               <source
+                 srcset="http://dummyimage.com/500x250/c5554d/ffffff&text=SM_768-991"
+                 media="(min-width:768px)">
+               <source
+                 srcset="http://dummyimage.com/500x350/c5554d/ffffff&text=XS_481-767"
+                 media="(min-width:481px)">
+               <source
+                 srcset="http://dummyimage.com/480x300/c5554d/ffffff&text=XS_0-480"
+                 media="(min-width:0px)">
+                <img src="http://dummyimage.com/400x400/000000/fffffff&text=ALL" alt="product image">
+             </picture>
+             
+             
+             <p>PRODUCT TEXT</p>
+           </div>
+           
+           <div class="product">
+             <picture>
+               <source
+                 srcset="http://dummyimage.com/300x350/c5554d/ffffff&text=LG_1200"
+                 media="(min-width:1200px)">
+               <source
+                 srcset="http://dummyimage.com/400x450/c5554d/ffffff&text=MD_992-1199"
+                 media="(min-width:992px)">
+               <source
+                 srcset="http://dummyimage.com/500x250/c5554d/ffffff&text=SM_768-991"
+                 media="(min-width:768px)">
+               <source
+                 srcset="http://dummyimage.com/500x350/c5554d/ffffff&text=XS_481-767"
+                 media="(min-width:481px)">
+               <source
+                 srcset="http://dummyimage.com/480x300/c5554d/ffffff&text=XS_0-480"
+                 media="(min-width:0px)">
+                <img src="http://dummyimage.com/400x400/000000/fffffff&text=ALL" alt="product image">
+             </picture>
+             
+             
+             <p>PRODUCT TEXT</p>
+           </div>
+           
+           <div class="product">
+             <picture>
+               <source
+                 srcset="http://dummyimage.com/300x350/c5554d/ffffff&text=LG_1200"
+                 media="(min-width:1200px)">
+               <source
+                 srcset="http://dummyimage.com/400x450/c5554d/ffffff&text=MD_992-1199"
+                 media="(min-width:992px)">
+               <source
+                 srcset="http://dummyimage.com/500x250/c5554d/ffffff&text=SM_768-991"
+                 media="(min-width:768px)">
+               <source
+                 srcset="http://dummyimage.com/500x350/c5554d/ffffff&text=XS_481-767"
+                 media="(min-width:481px)">
+               <source
+                 srcset="http://dummyimage.com/480x300/c5554d/ffffff&text=XS_0-480"
+                 media="(min-width:0px)">
+                <img src="http://dummyimage.com/400x400/000000/fffffff&text=ALL" alt="product image">
+             </picture>
+             
+             
+             <p>PRODUCT TEXT</p>
+           </div>
+           
+           <div class="product">
+             <picture>
+               <source
+                 srcset="http://dummyimage.com/300x350/c5554d/ffffff&text=LG_1200"
+                 media="(min-width:1200px)">
+               <source
+                 srcset="http://dummyimage.com/400x450/c5554d/ffffff&text=MD_992-1199"
+                 media="(min-width:992px)">
+               <source
+                 srcset="http://dummyimage.com/500x250/c5554d/ffffff&text=SM_768-991"
+                 media="(min-width:768px)">
+               <source
+                 srcset="http://dummyimage.com/500x350/c5554d/ffffff&text=XS_481-767"
+                 media="(min-width:481px)">
+               <source
+                 srcset="http://dummyimage.com/480x300/c5554d/ffffff&text=XS_0-480"
+                 media="(min-width:0px)">
+                <img src="http://dummyimage.com/400x400/000000/fffffff&text=ALL" alt="product image">
+             </picture>
+             
+             
+             <p>PRODUCT TEXT</p>
+           </div>
+           
+           <div class="product">
+             <picture>
+               <source
+                 srcset="http://dummyimage.com/300x350/c5554d/ffffff&text=LG_1200"
+                 media="(min-width:1200px)">
+               <source
+                 srcset="http://dummyimage.com/400x450/c5554d/ffffff&text=MD_992-1199"
+                 media="(min-width:992px)">
+               <source
+                 srcset="http://dummyimage.com/500x250/c5554d/ffffff&text=SM_768-991"
+                 media="(min-width:768px)">
+               <source
+                 srcset="http://dummyimage.com/500x350/c5554d/ffffff&text=XS_481-767"
+                 media="(min-width:481px)">
+               <source
+                 srcset="http://dummyimage.com/480x300/c5554d/ffffff&text=XS_0-480"
+                 media="(min-width:0px)">
+                <img src="http://dummyimage.com/400x400/000000/fffffff&text=ALL" alt="product image">
+             </picture>
+             
+             
+             <p>PRODUCT TEXT</p>
+           </div>
+           
+           <div class="product">
+             <picture>
+               <source
+                 srcset="http://dummyimage.com/300x350/c5554d/ffffff&text=LG_1200"
+                 media="(min-width:1200px)">
+               <source
+                 srcset="http://dummyimage.com/400x450/c5554d/ffffff&text=MD_992-1199"
+                 media="(min-width:992px)">
+               <source
+                 srcset="http://dummyimage.com/500x250/c5554d/ffffff&text=SM_768-991"
+                 media="(min-width:768px)">
+               <source
+                 srcset="http://dummyimage.com/500x350/c5554d/ffffff&text=XS_481-767"
+                 media="(min-width:481px)">
+               <source
+                 srcset="http://dummyimage.com/480x300/c5554d/ffffff&text=XS_0-480"
+                 media="(min-width:0px)">
+                <img src="http://dummyimage.com/400x400/000000/fffffff&text=ALL" alt="product image">
+             </picture>
+             
+             
+             <p>PRODUCT TEXT</p>
+           </div>
+           
+           <div class="product">
+             <picture>
+               <source
+                 srcset="http://dummyimage.com/300x350/c5554d/ffffff&text=LG_1200"
+                 media="(min-width:1200px)">
+               <source
+                 srcset="http://dummyimage.com/400x450/c5554d/ffffff&text=MD_992-1199"
+                 media="(min-width:992px)">
+               <source
+                 srcset="http://dummyimage.com/500x250/c5554d/ffffff&text=SM_768-991"
+                 media="(min-width:768px)">
+               <source
+                 srcset="http://dummyimage.com/500x350/c5554d/ffffff&text=XS_481-767"
+                 media="(min-width:481px)">
+               <source
+                 srcset="http://dummyimage.com/480x300/c5554d/ffffff&text=XS_0-480"
+                 media="(min-width:0px)">
+                <img src="http://dummyimage.com/400x400/000000/fffffff&text=ALL" alt="product image">
+             </picture>
+             
+             
+             <p>PRODUCT TEXT</p>
+           </div>
+           
+           <div class="product">
+             <picture>
+               <source
+                 srcset="http://dummyimage.com/300x350/c5554d/ffffff&text=LG_1200"
+                 media="(min-width:1200px)">
+               <source
+                 srcset="http://dummyimage.com/400x450/c5554d/ffffff&text=MD_992-1199"
+                 media="(min-width:992px)">
+               <source
+                 srcset="http://dummyimage.com/500x250/c5554d/ffffff&text=SM_768-991"
+                 media="(min-width:768px)">
+               <source
+                 srcset="http://dummyimage.com/500x350/c5554d/ffffff&text=XS_481-767"
+                 media="(min-width:481px)">
+               <source
+                 srcset="http://dummyimage.com/480x300/c5554d/ffffff&text=XS_0-480"
+                 media="(min-width:0px)">
+                <img src="http://dummyimage.com/400x400/000000/fffffff&text=ALL" alt="product image">
+             </picture>
+             
+             
+             <p>PRODUCT TEXT</p>
+           </div>
+           
+           <div class="product">
+             <picture>
+               <source
+                 srcset="http://dummyimage.com/300x350/c5554d/ffffff&text=LG_1200"
+                 media="(min-width:1200px)">
+               <source
+                 srcset="http://dummyimage.com/400x450/c5554d/ffffff&text=MD_992-1199"
+                 media="(min-width:992px)">
+               <source
+                 srcset="http://dummyimage.com/500x250/c5554d/ffffff&text=SM_768-991"
+                 media="(min-width:768px)">
+               <source
+                 srcset="http://dummyimage.com/500x350/c5554d/ffffff&text=XS_481-767"
+                 media="(min-width:481px)">
+               <source
+                 srcset="http://dummyimage.com/480x300/c5554d/ffffff&text=XS_0-480"
+                 media="(min-width:0px)">
+                <img src="http://dummyimage.com/400x400/000000/fffffff&text=ALL" alt="product image">
+             </picture>
+             
+             
+             <p>PRODUCT TEXT</p>
+           </div>
+           
+           <div class="product">
+             <picture>
+               <source
+                 srcset="http://dummyimage.com/300x350/c5554d/ffffff&text=LG_1200"
+                 media="(min-width:1200px)">
+               <source
+                 srcset="http://dummyimage.com/400x450/c5554d/ffffff&text=MD_992-1199"
+                 media="(min-width:992px)">
+               <source
+                 srcset="http://dummyimage.com/500x250/c5554d/ffffff&text=SM_768-991"
+                 media="(min-width:768px)">
+               <source
+                 srcset="http://dummyimage.com/500x350/c5554d/ffffff&text=XS_481-767"
+                 media="(min-width:481px)">
+               <source
+                 srcset="http://dummyimage.com/480x300/c5554d/ffffff&text=XS_0-480"
+                 media="(min-width:0px)">
+                <img src="http://dummyimage.com/400x400/000000/fffffff&text=ALL" alt="product image">
+             </picture>
+             
+             
+             <p>PRODUCT TEXT</p>
+           </div>
+           
+           
+
+      </section>    
+    </main>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
