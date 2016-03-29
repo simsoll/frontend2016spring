@@ -1,0 +1,41 @@
+$primary-color: #0076ff;
+$success-color: #19b119;
+$default-color: #ccc;
+
+@mixin color-template($color) {  
+    background-color: $color;
+    &:hover {
+        background-color: darken($color, 10%);
+    }
+    &:active {
+        background-color: lighten($color, 10%);
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+
+.btn {
+    border: 0;
+    border-radius: 4px;
+    display: inline-block;
+    color: #FFF;
+    padding: 12px;
+    line-height: 1.5;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.btn-primary {
+    @include color-template($primary-color);
+}
+
+.btn-success {
+    @include color-template($success-color);
+}
+
+
+.btn-default {
+    @include color-template($default-color);
+}

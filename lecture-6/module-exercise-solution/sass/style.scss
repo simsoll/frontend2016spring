@@ -1,0 +1,45 @@
+@import "_reset.scss";
+@import "_button.scss";
+
+body {
+  background-color: hotpink;
+}
+
+.cover {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  opacity: 0.4;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.modal-btn-open {
+  position: fixed;
+  left: 40vw;
+  top: 40vh;
+}
+
+
+.extra {
+   @extend .modal-btn-open;
+  top: 50vh;
+}
+
+
+.modal {
+  display: none;
+  width: 50vw;
+  height: 50vh;
+  background-color: #fff;
+  position: absolute;
+  top: 25vh;
+  left: 25vw;
+}
+
+.open, .show {
+  display: block;
+}
+

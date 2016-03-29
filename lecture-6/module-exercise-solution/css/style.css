@@ -1,0 +1,129 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: Helvetica, Arial, sans-serif; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+h1 {
+  font-size: 200%;
+  width: 100%;
+  text-align: center; }
+
+.btn {
+  border: 0;
+  border-radius: 4px;
+  display: inline-block;
+  color: #FFF;
+  padding: 12px;
+  line-height: 1.5;
+  font-size: 1em;
+  cursor: pointer; }
+
+.btn-primary {
+  background-color: #0076ff; }
+  .btn-primary:hover {
+    background-color: #005ecc; }
+  .btn-primary:active {
+    background-color: #3391ff; }
+  .btn-primary:focus {
+    outline: none; }
+
+.btn-success {
+  background-color: #19b119; }
+  .btn-success:hover {
+    background-color: #138413; }
+  .btn-success:active {
+    background-color: #1fde1f; }
+  .btn-success:focus {
+    outline: none; }
+
+.btn-default {
+  background-color: #ccc; }
+  .btn-default:hover {
+    background-color: #b3b3b3; }
+  .btn-default:active {
+    background-color: #e6e6e6; }
+  .btn-default:focus {
+    outline: none; }
+
+body {
+  background-color: hotpink; }
+
+.cover {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  opacity: 0.4;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.modal-btn-open, .extra {
+  position: fixed;
+  left: 40vw;
+  top: 40vh; }
+
+.extra {
+  top: 50vh; }
+
+.modal {
+  display: none;
+  width: 50vw;
+  height: 50vh;
+  background-color: #fff;
+  position: absolute;
+  top: 25vh;
+  left: 25vw; }
+
+.open, .show {
+  display: block; }
+
+/*# sourceMappingURL=style.css.map */
