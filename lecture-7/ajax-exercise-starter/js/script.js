@@ -48,18 +48,18 @@
             }).success(function(users) {
                 var table = $('#logins');
 
-                $(users).each(function(index, element) {
-                    var $img = $('<img>').attr('src', element.avatar_url);
+                $(users).each(function(index, user) {
+                    var $img = $('<img>').attr('src', user.avatar_url);
                     var $button = $('<button/>',
                         {
-                            text: 'Load ' + element.login + '\'s repo!',
+                            text: 'Load ' + user.login + '\'s repo!',
                             click: function() {
-                                updateRepos(element.repos_url);
+                                updateRepos(user.repos_url);
                             }
                         });
 
                     table.append(
-                        $('<tr>').append($('<td>').html(element.login), $('<td>').append($img), $('<td>').append($button))
+                        $('<tr>').append($('<td>').html(user.login), $('<td>').append($img), $('<td>').append($button))
                     );
                 });
             });
@@ -74,12 +74,12 @@
         function updateRepos(url) {
             $.ajax({
                 url: url
-            }).success(function(data) {
+            }).success(function(repos) {
                 var selection = $('#repos').empty();
 
-                $(data).each(function(index, element) {
+                $(repos).each(function(index, repo) {
                     selection.append(
-                        $('<option>').attr('value', element.name).html(element.name)
+                        $('<option>').attr('value', repo.name).html(repo.name)
                     );
                 });
             });
