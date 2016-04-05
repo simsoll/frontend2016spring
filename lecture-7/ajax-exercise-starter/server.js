@@ -2,7 +2,6 @@ var express = require('express');
 var app = express();
 var path = require('path');
 var bodyParser = require('body-parser');
-var router = express.Router();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -13,3 +12,4 @@ app.post('/', function(req, res, next) {
 });
 
 app.listen(3000);
+

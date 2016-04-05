@@ -1,0 +1,21 @@
+{
+  "name": "ajax-exercise-starter",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Niels Henrik Juul Hansen <niha@eaaa.dk>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/eaaa/frontend2016spring",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.2"
+  }
+}
