@@ -1,0 +1,21 @@
+@import "_reset.scss";
+
+body {
+  background-color: hotpink;
+}
+
+.avatar{
+  width: 100px;
+}
+
+td {
+  vertical-align: top;
+}
+
+tr {
+   background-color: pink;
+}
+
+tr:nth-child(even){
+  background-color: orange;
+}
