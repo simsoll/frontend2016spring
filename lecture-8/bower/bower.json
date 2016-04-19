@@ -1,0 +1,21 @@
+{
+  "name": "lecture-8",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Simon Søllingvraa <sso@danskecommodities.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/simsoll/frontend2016spring",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}

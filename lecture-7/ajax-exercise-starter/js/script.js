@@ -28,7 +28,7 @@
 
     var module = function() {
         function initForm() {
-            $('#submit').on('click', function(e) {
+            $('#submit').on('submit', function(e) {
                 e.preventDefault();
                 $.ajax({
                     type: "POST",

@@ -1,0 +1,1 @@
+var number = 23.4;
