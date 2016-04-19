@@ -45,3 +45,50 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+div {
+  height: 100px;
+  border: 1px solid black;
+  line-height: 100px;
+  text-align: center;
+  margin: 20px 0; }
+
+.button {
+  width: 100px;
+  height: 50px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  outline: none; }
+  .button.-primary {
+    background-color: green; }
+    .button.-primary:hover {
+      background-color: #003400; }
+    .button.-primary:active {
+      background-color: #00cd00; }
+  .button.-secondary {
+    background-color: blue; }
+    .button.-secondary:hover {
+      background-color: #0000b3; }
+    .button.-secondary:active {
+      background-color: #4d4dff; }
+
+.button-mixin {
+  width: 100px;
+  height: 50px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  outline: none; }
+  .button-mixin.-primary {
+    background-color: green; }
+    .button-mixin.-primary:hover {
+      background-color: #003400; }
+    .button-mixin.-primary:active {
+      background-color: #00cd00; }
+  .button-mixin.-secondary {
+    background-color: blue; }
+    .button-mixin.-secondary:hover {
+      background-color: #0000b3; }
+    .button-mixin.-secondary:active {
+      background-color: #4d4dff; }
