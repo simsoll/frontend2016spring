@@ -1,0 +1,43 @@
+@import "_reset.scss";
+
+$color-container: #F90;
+$color-column: #0F9;
+$columns: 12;
+$container-width: 100%;
+$gutter: 2%;
+
+.row {
+  margin: 0 auto;
+  width: $container-width;
+  background-color: $color-container;
+  height: auto;
+  clear: both;
+}
+
+[class*='col-'] {
+    min-height: 100px;
+    background-color: $color-column;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    padding: 30px;
+    float: left;
+    text-align: center;
+    margin-right: $gutter;
+    opacity: 0.5;
+  
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@for $i from 1 through $columns {
+  .col-#{$i} { 
+    // The Elias
+    width: (100% / $columns / $i) - ($gutter * ($columns - $i) / $columns);
+    // The Simon
+    width: (100% - ($gutter * ($columns / $i - 1))) * ($i / $columns);
+    &:after {
+      content: "col-" + $i;  
+    }
+  }
+}
