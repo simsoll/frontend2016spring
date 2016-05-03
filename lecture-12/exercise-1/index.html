@@ -1,20 +1,53 @@
 <!DOCTYPE html>
 <html ng-app="shop">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"></link>
 </head>
+
 <body ng-controller="shopController">
-
-  {{ products }}
-  
-  <script src="bower_components/angular/angular.min.js"></script>
-  <script src="app/app.module.js"></script>
-  <script src="app/app.controller.js"></script>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Title</th>
+							<th>Style</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="product in products">
+							<td>{{product.title}}</td>
+							<td>{{product.style}}</td>
+							<td><button class="btn btn-success" ng-click="addToCart(product)">Buy</button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="well well-sm col-md-4 col-md-offset-2" ng-hide="isEmpty()">
+			<h4>Cart</h4>
+			<ul class="list-group">
+				<li ng-repeat="item in cart" class="list-group-item">
+					<button ng-click="removeFromCart(item.product)" class="btn btn-danger btn-xs">
+							<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button> {{item.product.title}}
+					<span class="badge">{{item.count}}</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="app/app.module.js"></script>
+	<script src="app/app.controller.js"></script>
 </body>
+
 </html>
-
-

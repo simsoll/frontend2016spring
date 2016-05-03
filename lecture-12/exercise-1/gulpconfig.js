@@ -7,7 +7,7 @@ function gulpConfig(){
 		root: root,
 		browserSyncFiles: [root + "**/*"],
 		browserSyncPort: 4000,
-        browsers: ["firefox"],
+        browsers: ["chrome"],
         sass: root + "sass/style.scss",
         css: root + "./css"
 	};
